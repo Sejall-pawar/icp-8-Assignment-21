@@ -101,12 +101,101 @@ body {
 
 /* Media query for screens between 600px and 768px width */
 @media screen and (min-width: 600px) and (max-width: 768px) {
-    /* Add your CSS rules here */
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .header, .footer {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .header h1 {
+        margin: 0;
+    }
+    .invoice-details, .client-details, .pet-details, .services {
+        margin-bottom: 15px;
+    }
+    .invoice-details table, .services table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .invoice-details th, .invoice-details td, .services th, .services td {
+        padding: 6px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    .total {
+        text-align: right;
+    }
+    .pet-info-container, .payment-info-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .pet-details, .payment-details {
+        flex: 1;
+    }
+    .pet-image, .payment-image {
+        margin-top: 15px; 
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 150px; 
+    }
 }
 
 /* Media query for screens between 769px and 992px width */
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    /* Add your CSS rules here */
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 17px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .header, .footer {
+        text-align: center;
+        margin-bottom: 17px;
+    }
+    .header h1 {
+        margin: 0;
+    }
+    .invoice-details, .client-details, .pet-details, .services {
+        margin-bottom: 17px;
+    }
+    .invoice-details table, .services table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .invoice-details th, .invoice-details td, .services th, .services td {
+        padding: 7px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    .total {
+        text-align: right;
+    }
+    .pet-info-container, .payment-info-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .pet-details, .payment-details {
+        flex: 1;
+    }
+    .pet-image, .payment-image {
+        margin-top: 17px; 
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 180px; 
+    }
+
 }
 
 /* Media query for screens between 993px and 1200px width */
