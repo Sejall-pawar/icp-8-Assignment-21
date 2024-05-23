@@ -200,5 +200,50 @@ body {
 
 /* Media query for screens between 993px and 1200px width */
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-    /* Add your CSS rules here */
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .header, .footer {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .header h1 {
+        margin: 0;
+    }
+    .invoice-details, .client-details, .pet-details, .services {
+        margin-bottom: 25px;
+    }
+    .invoice-details table, .services table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .invoice-details th, .invoice-details td, .services th, .services td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    .total {
+        text-align: right;
+    }
+    .pet-info-container, .payment-info-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .pet-details, .payment-details {
+        flex: 1;
+    }
+    .pet-image, .payment-image {
+        margin-top: 25px; 
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+        max-width: 250px; 
+    }
+    
 }
